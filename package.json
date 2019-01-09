@@ -1,0 +1,30 @@
+{
+  "name": "backlog-issue-validator",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "validate Backlog issue",
+  "author": "Minoru Nakata <minoru@sprocket.bz>",
+  "private": true,
+  "scripts": {
+    "build": "bin/build.sh",
+    "upload": "bin/upload.sh",
+    "stack:create": "bin/stack-create.sh",
+    "lambda:update": "bin/lambda-update.sh"
+  },
+  "dependencies": {
+    "js-yaml": "^3.12.1",
+    "json-logic-js": "^1.2.2",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  },
+  "devDependencies": {
+    "dotenv": "^6.2.0",
+    "eslint": "^5.12.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
