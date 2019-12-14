@@ -1,20 +1,17 @@
 #!/usr/bin/env bash
 
 # clean build
-mkdir -p build dist
-rm build/*.js build/logic.yml dist/* > /dev/null
+mkdir -p build
+rm build/*.js build/logic.yml > /dev/null
 
 # copy resources
-cp src/*.js src/logic.yml build
-cp package.json yarn.lock build
+cp lambda/*.js lambda/logic.yml build
+cp package.json package-lock.json build
 
 pushd build
 
 # install dependencies
-yarn install --production
-
-# pack assets
-rm package.json yarn.lock
-zip -r ../dist/${npm_package_version}.zip .
+npm install --production
+rm package.json package-lock.json
 
 popd

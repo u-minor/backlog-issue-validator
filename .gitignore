@@ -1,5 +1,10 @@
-.DS_Store
+*.js
+*.d.ts
 /build
-/cf/params.json
-/dist
-/node_modules
+/config/*.yml
+!/config/test.yml
+node_modules
+
+# CDK asset staging directory
+.cdk.staging
+cdk.out

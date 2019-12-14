@@ -1,9 +1,20 @@
 {
-  "extends": "standard",
-  "parserOptions": {
-    "ecmaVersion": 8
-  },
-  "plugins": [
-    "standard"
-  ]
+  "extends": [
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:prettier/recommended",
+    "prettier/@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "rules": {
+    "semi": ["error", "always"],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "semi": true
+      }
+    ]
+  }
 }
