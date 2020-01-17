@@ -92,7 +92,7 @@ Object {
         "Environment": Object {
           "Variables": Object {
             "BACKLOG_API_KEY": "xxxxxxxx",
-            "BACKLOG_BASE_URL": "https://example.backlog.jp/",
+            "BACKLOG_BASE_URL": "https://example.backlog.jp",
           },
         },
         "FunctionName": "MyTestStack-LambdaFunction",
