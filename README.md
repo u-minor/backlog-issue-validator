@@ -39,7 +39,7 @@ config/environment.yml.example を複製して、config/production.yml を作成
 ## デプロイ
 
 ```command-line
-NODE_ENV=production cdk deploy
+NODE_ENV=production npm run cdk deploy
 ```
 
 ## Backlog 側の設定
