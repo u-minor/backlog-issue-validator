@@ -17,7 +17,7 @@ export class CdkStack extends cdk.Stack {
       functionName: `${id}-LambdaFunction`,
       handler: 'index.handler',
       memorySize: 128,
-      runtime: lambda.Runtime.NODEJS_12_X,
+      runtime: lambda.Runtime.NODEJS_16_X,
       timeout: cdk.Duration.seconds(30)
     });
 

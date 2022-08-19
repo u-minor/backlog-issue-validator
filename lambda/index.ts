@@ -140,7 +140,7 @@ export const handler: AWSLambda.Handler = async (
     return {
       statusCode: 500,
       body: {
-        message: err.toString()
+        message: err instanceof Error ? err.toString() : ''
       }
     };
   }
