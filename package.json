@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "js-yaml": "^3.13.1",
-    "json-logic-js": "^2.0.0",
+    "json-logic-js": "^2.0.1",
     "request": "^2.88.0",
     "request-promise-native": "^1.0.8"
   },
